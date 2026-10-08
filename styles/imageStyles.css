@@ -10,5 +10,20 @@
 
   border-width: 5px;
   border-style: solid;
-  border-color: rgba(0, 14, 26, 0.801);;
+  border-color: rgba(0, 14, 26, 0.801);
+
+}
+
+.game-Box-Image-Style{
+  display: inline-block;  
+  width: 500px;
+  height: 50%;
+  object-fit: cover; 
+
+  margin-top: 1%;
+
+  border-width: 6px;
+
+  padding-left: 25px;
+  padding-top: 10px;
 }

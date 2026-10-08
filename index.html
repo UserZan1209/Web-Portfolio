@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color:rgb(0, 32, 58)">
+<html style="background-color:rgb(1, 25, 56)">
     <title>Luke's Software Portfolio</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,120 +14,121 @@
     <link rel="stylesheet" href="../styles/imageStyles.css">
     <!-- Stylesheet for input components -->
     <link rel="stylesheet" href="../styles/inputStyles.css">
+    <!-- Stylesheet for divide styles -->
+    <link rel="stylesheet" href="../styles/divideStyles.css">
+    <!-- Stylesheet for text styles -->
+    <link rel="stylesheet" href="../styles/textStyles.css">
 
-    <head > 
-        <!-- Top of the pages -->
-        <p class="title-text">
-            Luke's Portfolio
-        </p>
-        <p class="sub-title-text">
-            <a style="text-decoration:none" href="https://anotherindiedev.wixsite.com/game-programming-por" target="_blank">
-                Old Portfolio
-            </a>
-        </p>
+    <div class="header-Divide">
+        <head > 
+            <!-- Top of the pages -->
+            <p class="title-text">
+                Luke's Portfolio
+            </p>
+            <p class="sub-title-text">
+                <a style="text-decoration:none" href="https://anotherindiedev.wixsite.com/game-programming-por" target="_blank">
+                    Old Portfolio
+                </a>
+            </p>
 
+            
+        </head>
+    </div>
+
+    <div class="sub-Header-Divide">
         <p class="coming-soon">
-            Coming Soon!<br>
             <button class="default-button">
-                Home
+                <a style="text-decoration:none" href="../pages/gameDevelopment.html">Game Projects</a>
             </button>
-            
+
             <button class="default-button">
-                Web Projects
+                <a style="text-decoration:none" href="../pages/webDevelopment.html">Web Projects</a>
             </button>
-            
+
             <button class="default-button">
-                Game Projects
+                <a style="text-decoration:none" href="../pages/softwareDevelopment.html">Software Development</a>
             </button>
-        
+
             <button class="default-button">
-                Software Development
+                <a style="text-decoration:none" href="../pages/artAndGraphicDesign.html">Art & Graphic Design</a>
             </button>
-             
-            
         </p>
-    </head>
+    </div>
 
-    <body>
-        <p class="paragraph-text">
-            Hello World! This Is demo website.
-        </p>
-        
-        <p class="paragraph-text">
-            Programming has been my biggest passion since high school. While I enjoy creating games I have a wide interest in
-            all
-            things software development, as being able to design and create new and interesting software is something I find
-            very
-            fulfilling.
-        
-            I started my journey into game development initially with art and graphic design and taught myself programming when
-            trying to develop my first few game projects. I instantly fell in love with the practice and the endless amount of
-            things to learn within the subject and then decided to specialize in the programming side of game development and
-            went
-            on to pursue a Bachelor of Science degree. I currently have been programming for six years.
-        
-            I still enjoy designing and creating art and this has become a hobby of mine which can be implemented into my work.
-        </p>
-        
-        <p class="paragraph-text">
-            The main skills I developed in university for my degree were; C# I already had prior experience with unity but the
-            course helped give me a more rounded understanding of the language as well as building my own editor tools to
-            increase
-            the speed of my development process, C++ while I had used it a little beforehand this one was the one I had less
-            experience with but got the chance to learn the language in isolation before moving into engine work. From there I
-            had a
-            level design module requiring UE4 giving a me a good chance to start learning the UE4 C++ libraries and experiment
-            with
-            the blueprint system.
-            I still enjoy designing and creating art and this has become a hobby of mine which can be implemented into my work.
-            <br><br>
-            If you would like to get in contact with me please feel free send your email to the address below and I will get 
-            back to you as soon as possible.
+    <div class="infomation-Box-Divide">
+        <body>
+            <p class="paragraph-text">
+                Programming has been my biggest passion since high school. While I enjoy creating games I have a wide interest in
+                all
+                things software development, as being able to design and create new and interesting software is something I find
+                very
+                fulfilling.
+                
+                I started my journey into game development initially with art and graphic design and taught myself programming when
+                trying to develop my first few game projects. I instantly fell in love with the practice and the endless amount of
+                things to learn within the subject and then decided to specialize in the programming side of game development and
+                went on to pursue a Bachelor of Science degree. I currently have been programming for six years.
+                
+                I still enjoy designing and creating art and this has become a hobby of mine which can be implemented into my work.
+            </p>
 
-            <br><br>
-        </p>
-
-
-        <!-- Contact form -->
-        
-        <p class="paragraph-text">
-                Contact form.<br><br>
+            <p class="paragraph-text">
+                The main skills I developed in university for my degree were; C# I already had prior experience with unity but the
+                course helped give me a more rounded understanding of the language as well as building my own editor tools to
+                increase the speed of my development process, C++ while I had used it a little beforehand this one was the one I had less
+                experience with but got the chance to learn the language in isolation before moving into engine work. From there I
+                had a level design module requiring UE4 giving a me a good chance to start learning the UE4 C++ libraries and experiment with
+                the blueprint system.
+                I still enjoy designing and creating art and this has become a hobby of mine which can be implemented into my work.
+                <br><br>
+                If you would like to get in contact with me please feel free send your email to the address below and I will get
+                back to you as soon as possible.
+                
+                <br><br>
+            </p>
+        </body>
+    </div>
+    <!-- Contact form -->
+    <div>
+    <form action="https://formspree.io/f/xzeddrkp" method="post">
+        <p class="contact-form-text">
+            <br>Contact form.<br><br>
+            Use this form to get in contact with me regarding future work, bug reports, or any other questions you may have. I will
+            get back to you as soon as possible.
             <br>
-
-            <input class="search-Bar-Style-Default" type="text" placeholder="Mr. John Smith">
+            <label for="name">Name:</label><br>
+                <input class="search-Bar-Style-Default" type="text" placeholder="Mr. John Smith" id="name" name="name" required>
             <br>
-            <input class="search-Bar-Style-Default" type="text" placeholder="johnsmith@examplemail.co.uk">
+            <label for="email">Email:</label><br>
+                <input class="search-Bar-Style-Default" type="email" placeholder="johnsmith@examplemail.co.uk" id="email" name="email" required>
             <br>
-            <input class="search-Bar-Style-Default" type="text" placeholder="(44+) 1234 567890"> 
+            <label for="number">Phone Number:</label><br>
+                <input class="search-Bar-Style-Default" type="text" placeholder="(44+) 1234 567890" id="number" name="number" required>
             <br><br>
-
-            <input class="search-Bar-Style-MessageBox" type="text" placeholder=
-            "Hello, I am interested in your work and would like to get in contact with you. ">
-
+    
+            <label for="message">Message:</label><br>
+                <input class="search-Bar-Style-MessageBox" name="message" required
+                    placeholder="Hello, I am interested in your work and would like to get in contact with you. ">
             <br><br>
-
-                What is your prefered contact method?<br><br>
-           
+    
+            What is your prefered contact method?<br><br>
+    
             <input class="checkBox-Style-Default" type="checkbox">
                 SMS
             <input class="checkBox-Style-Default" type="checkbox">
                 E-Mail
-                
+    
             <br><br>
-
-
-            <button class="default-button">
-                Send Contact Details
-            </button>
+    
+            <input class="default-button" type="submit" value="Send Contact Details">
         </p>
-
-        
-
-
-        <img class="default-image-style" src="../images/catimage.jpg">
-        
-    </body>
+            
+    </form>
+    </div>
+    
 </html>
+
+    
 
 
 

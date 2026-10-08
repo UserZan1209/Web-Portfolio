@@ -25,18 +25,10 @@
    border-radius: 5px;
    border-style: solid;
    
-   padding-left: 15px;
-   padding-right: 15px;
-   padding-top: 5px;
-   padding-bottom: 5px;
+   text-align: top;
 
-   text-align: start;
-   text-rendering: auto;
-
-   padding-bottom: 100px;
-
-   width: 50%;
-   height: 100%;
+   width: 800px;
+   height: 250px;
 }
 
 .checkBox-Style-Default {
