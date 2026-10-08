@@ -1,0 +1,75 @@
+.body{
+  margin: 0;
+  padding: 0;
+}
+
+.default-Divide{
+  
+}
+
+.default-Inline-Divide 
+{
+  display: inline-block;
+  
+}
+
+.header-Divide{
+  display: block;
+  background-color: rgba(5, 30, 68, 0);
+  background-size: cover;
+  padding-top: 10px;
+  width: 1000px;
+  margin: auto;
+}
+
+.infomation-Box-Divide{
+  display: block;
+  background-color: rgb(0, 19, 37);
+  width: 1000px;
+  margin: auto;
+}
+
+.infomation-GameBox-Divide {
+  display: block;
+  background-color: rgb(0, 19, 37);
+  width: 1700px;
+  height: 100%;
+
+  margin: auto;
+  
+}
+
+.game-Box-Image-Divide{
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.801);
+  width: 550px;
+  padding-bottom: 10px;
+  margin-bottom: 1%;
+  margin-left: 0%;
+}
+
+.game-Box-Style {
+  background-color: rgba(69, 3, 224, 0.801);
+  display: inline-block;
+  width: 40%;
+  height: 50%;
+
+  object-fit: cover;
+  position: center;
+
+  margin-top: 1%;
+  margin-left: 0%;
+
+  border-width: 6px;
+  border-style: solid;
+}
+
+.game-Box-Text-Divide {
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 0%;
+
+  padding-left: 1%;
+  margin-bottom: 2%;
+  width: 1100px;
+}
