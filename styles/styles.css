@@ -1,31 +1,8 @@
-p {
-  /* for common changes to the paragraph style */
-  background-color: rgb(1, 7, 90);
-  background-size: stretch;
-  box-shadow: 5px 5px 0px rgb(0, 0, 0, 0.705);
-
-  color: grey;
-}
 
 button {
   /* for common changes to the button style */
 }
 
-.title-text {
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  font-weight: bolder;
-  font-style: 'courier new';
-  font-size: 26px;
-
-  text-align: center;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
-
-  color: rgb(131, 131, 131);
-
-  line-height: 12px;
-}
 
 .sub-title-text {
   background-color: rgba(54, 54, 54, 0);
@@ -63,7 +40,7 @@ button {
   color: rgb(59, 59, 59);
 }
 
-.coming-soon {
+.coming-soona {
   box-shadow: 5px 5px 0px rgb(0, 0, 0, 0.705);
 
   font-family: 'Tiny5';
@@ -74,13 +51,12 @@ button {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.863);
   color: rgb(255, 255, 255);
 
-  margin-bottom: 40px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 15px;
   padding-bottom: 15px;
+  width: 100%;
 
-  background-color: rgb(84, 184, 45);
+  background-color: rgb(214, 120, 12);
 }
 
 /* Default button style */
@@ -146,4 +122,38 @@ button {
 /* Quick Find Button when clicked */
 .quick-find-button:active {
   opacity: 0.7;
+}
+
+.slideshow-container {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }

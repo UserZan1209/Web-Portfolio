@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html style="background-color:rgb(0, 32, 58)">
+<title>Luke's Software Portfolio</title>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Stylesheet for the subsections of the website -->
+<link rel="stylesheet" href="../styles/segmentStyles.css">
+<!-- Stylesheet for the buttons & interactable components for website -->
+<link rel="stylesheet" href="../styles/buttonStyles.css">
+<!-- Stylesheet for images -->
+<link rel="stylesheet" href="../styles/imageStyles.css">
+<!-- Stylesheet for input components -->
+<link rel="stylesheet" href="../styles/inputStyles.css">
+<!-- Stylesheet for divide styles -->
+<link rel="stylesheet" href="../styles/divideStyles.css">
+<link rel="stylesheet" href="../styles/styles.css">
+<div class="header-Divide">
+
+  <div class="header-Divide">
+
+    <head>
+      <!-- Top of the pages -->
+      <p class="title-text">
+        Dead End
+      </p>
+    </head>
+  </div>
+
+  <div class="sub-Header-Divide">
+    <p class="coming-soon">
+      <button class="default-button">
+        <a style="text-decoration:none" href="../index.html">Home</a>
+      </button>
+
+      <button class="default-button">
+        <a style="text-decoration:none" href="../pages/webDevelopment.html">Web Projects</a>
+      </button>
+
+      <button class="default-button">
+        <a style="text-decoration:none" href="../pages/softwareDevelopment.html">Software Development</a>
+      </button>
+
+      <button class="default-button">
+        <a style="text-decoration:none" href="../pages/artAndGraphicDesign.html">Art & Graphic Design</a>
+      </button>
+    </p>
+  </div>
+
+  <div class="infomation-Box-Divide">
+
+    <!-- Description -->
+
+    <body>
+      <p class="page-Header">
+        Hello World! This is a template page for later expansion. How are you here?
+      </p>
+
+
+  </div>
+
+  <div class="infomation-Box-Divide">
+    </body>
+
+    <br><br>
+
+    <body>
+      <div class="slideshow-container">
+        <div class="slide active">
+          <img class="game-Box-Image-Style" src="../images/Deadend.png">
+        </div>
+        <div class="slide">
+          <img class="game-Box-Image-Style" src="../images/Deadend1.png">
+        </div>
+        <div class="slide">
+          <img class="game-Box-Image-Style" src="../images/Deadend2.png">
+        </div>
+      </div>
+
+      <button class="default-button" onclick="prevSlide()">Previous</button>
+      <button class="default-button" onclick="nextSlide()">Next</button>
+
+      <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+          slides.forEach(slide => slide.classList.remove('active'));
+          slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(nextSlide, 3000);
+      </script>
+
+
+    </body>
+  </div>
+
+
+</html>

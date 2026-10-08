@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html style="background-color:rgb(0, 32, 58)">
-<title>About DeadEnd</title>
+<title>About !Hitman</title>
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
   <head>
     <!-- Top of the pages -->
     <p class="title-text">
-      Dead End
+      !Hitman
     </p>
   </head>
 </div>
@@ -55,8 +55,9 @@
 
 <body>
   <p class="page-Game-Header">
-    My idea for the project was to create a hybrid between a more classic arcade survival experience with elements of a
-    rouge-like. The premise of the game is....
+    !Hitman is a prototype for a stealth-assassination game that incorporates some light ragdoll mechanics. My initial idea
+    was to have standalone levels with quests within the levels to act as ways to level up or acquire weapons unique to the
+    level. Levels would be accessed from a base that acts as the HUB for the game that could be upgraded/ customised.
   </p>
 </body>
 
@@ -67,13 +68,7 @@
   <body>
     <div class="slideshow-container">
       <div class="slide active">
-        <img class="game-Box-Image-Style" src="../images/Deadend.png">
-      </div>
-      <div class="slide">
-        <img class="game-Box-Image-Style" src="../images/Deadend1.png">
-      </div>
-      <div class="slide">
-        <img class="game-Box-Image-Style" src="../images/Deadend2.png">
+        <img class="game-Box-Image-Style" src="../images/HitmanThumbnail.png">
       </div>
     </div>
 
@@ -99,29 +94,25 @@
         showSlide(currentSlide);
       }
 
-      // Auto-slide every 3 seconds
-      setInterval(nextSlide, 3000);
+      // Auto-slide every 8 seconds
+      setInterval(nextSlide, 8000);
     </script>
 
 <p class="page-Game-Header">
-      While this wasn't my first time developing a game with other developers, it was however my first time working with
-      another programmer. We had a solid idea for the scope of the game which made it easier to plan and divide the workload
-      amongst the team to make development more efficient, as the rest of the team we're not familiar with GitHub I developed
-      the project and the artist would send me the assets they created.<br><br>
+      Before starting the project, I knew I wanted to add another aspect to the project to push myself and learn something
+      new, so I decided to incorporate ragdolls into the game. My attempt at this involved using animation trees; when I
+      wanted the character to ragdoll, the behaviour switched to ragdolls by disabling the animation controller.<br><br>
       
-      AND...<br><br>
+      The issue with this was that the transition between behaviour states was functional but was visually noticeable. After
+      taking some time with additional research after the development period had concluded, If I were to rebuild this
+      mechanic, I would use inverse kinematics to generate animations at runtime rather than using predetermined animations.<br><br>
 
-      The main issue occurred about 3 weeks before the deadline, after the second programmer hadn't done much of anything he
-      decided to drop out of university as a result his workload was passed onto me. While initially panicked and overwhelmed
-      I soon took a breath and reorganised my workload cutting out extra features in order to submit a functional project.<br><br>
+      To finish up this project I would like to clean up the mechanics and expand on others to build a series of levels to
+      make a small V-Slice. Most notable improving the environments making them more interactable to better integrate with the
+      ragdoll mechanic currently present.<br><br>
       
-      ​
-      Thankfully due to the circumstances the module leaders we're understanding with state of the project.<br><br>
-
-      Moving forward on my own the original project ended up feeling quite incomplete so after I graduated I went back to the
-      concept to build a prototype for a retro horror zombies game using a PSX shader.<br><br>
-      
-      ​
+      I would also like to do a little world building to make the game more cohesive experience. The game would be set in a
+      dystopian future where society is fully made up of machines.
 </p>
 </body>
 </div>
