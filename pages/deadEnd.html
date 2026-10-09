@@ -55,72 +55,98 @@
 
 <body>
   <p class="page-Game-Header">
+    <span style="font-size: 24px;">Project Overview</span><br><br>
+
     My idea for the project was to create a hybrid between a more classic arcade survival experience with elements of a
-    rouge-like. The premise of the game is....
+    rouge-like. DeadEnd is going to be a single player project that will have similar game structure to the 'Call of Duty'
+    series, having three game modes that have cross-progression. The hook of the game is it's visual aesthetic being similar
+    to early 3D games that use low detail and liminal space to create an eerie experience. <br><br>
+
+    Genres: FPS, 3D, Retro, Story, Single Player, Arcade, Survival, Zombies, RPG,<br>
+    Engine: Unity<br>
+    Team-Size: 1<br>
+    Duration: <span style="color: yellow;">Ongoing</span><br>
   </p>
 </body>
 
-
-<div class="infomation-Box-Divide">
+<div class="SlideShow-Box-Divide">
   <br><br>
 
   <body>
-    <div class="slideshow-container">
-      <div class="slide active">
-        <img class="game-Box-Image-Style" src="../images/Deadend.png">
-      </div>
-      <div class="slide">
-        <img class="game-Box-Image-Style" src="../images/Deadend1.png">
-      </div>
-      <div class="slide">
-        <img class="game-Box-Image-Style" src="../images/Deadend2.png">
-      </div>
+  <div class="slideshow-container">
+    <div class="slide active">
+      <img class="game-ImageView-Style" src="../images/Deadend.png">
     </div>
+    <div class="slide">
+      <img class="game-ImageView-Style" src="../images/Deadend1.png">
+    </div>
+    <div class="slide">
+      <img class="game-ImageView-Style" src="../images/Deadend2.png">
+    </div>
+  </div>
 
-    <button class="default-button" onclick="prevSlide()">Previous</button>
-    <button class="default-button" onclick="nextSlide()">Next</button>
+  <button class="default-button" onclick="prevSlide()">Previous</button>
+  <button class="default-button" onclick="nextSlide()">Next</button>
 
-    <script>
-      const slides = document.querySelectorAll('.slide');
-      let currentSlide = 0;
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
 
-      function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        slides[index].classList.add('active');
-      }
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
 
-      function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-      }
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
 
-      function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-      }
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
 
-      // Auto-slide every 3 seconds
-      setInterval(nextSlide, 3000);
-    </script>
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000);
+  </script>
+
+
 
 <p class="page-Game-Header">
+     <span style="font-size: 24px;">Technical Challenges</span><br><br>
+
       While this wasn't my first time developing a game with other developers, it was however my first time working with
       another programmer. We had a solid idea for the scope of the game which made it easier to plan and divide the workload
       amongst the team to make development more efficient, as the rest of the team we're not familiar with GitHub I developed
       the project and the artist would send me the assets they created.<br><br>
-      
-      AND...<br><br>
 
       The main issue occurred about 3 weeks before the deadline, after the second programmer hadn't done much of anything he
       decided to drop out of university as a result his workload was passed onto me. While initially panicked and overwhelmed
-      I soon took a breath and reorganised my workload cutting out extra features in order to submit a functional project.<br><br>
-      
-      ​
-      Thankfully due to the circumstances the module leaders we're understanding with state of the project.<br><br>
+      I soon took a breath and reorganised my workload cutting out extra features in order to submit a functional
+      project.<br><br>
+   
+      Moving forward on my own the original project from  ended up feeling quite incomplete so after I graduated I went back to the
+      concept to build a new prototype for a retro horror zombies game from scratch. Some of the major features I built for this project
+      ended up being the modular item / inventory system which allowed for quicker development of gameplay depth allowing for ranged 
+      enemies to use everything the player can.<br><br>
 
-      Moving forward on my own the original project ended up feeling quite incomplete so after I graduated I went back to the
-      concept to build a prototype for a retro horror zombies game using a PSX shader.<br><br>
+      This was the first project I needed to actively optimise as much as a could due to the endless nature of the survival genre so concepts
+      like object pooling and rendering tricks became very useful for this project.
       
+      <br><br>
+
+    <span style="font-size: 24px;">Important & Key mechanics</span><br><br>
+    <span style="text-align: left;">• Endless waves of enemies all managed via a 'spawn manager'. The manager is able to create permutations of enemies with their movespeed and
+    general behaviour. Included is the ability to add alternate rounds to spice up gameplay facing off against stronger zombies or humans that shoot
+    back.</span><br>
+    <span style="text-align: left;">• Modular Inventory & items a system I had been working on across projects that would allow for quicker prototyping having players and NPC
+    objects to interact in the world in a similar fashion creating dynamic gameplay.</span><br>
+    <span style="text-align: left;">• Enemy AI & Behaviour States were the other major component that made this project engaging I took
+    Inspiration from the 'Left 4 Dead' franchise, agreeing that zombies like us as humans would exhibit unique maybe sometimes pointless behaviour.
+    Moving foward with this project I would like to build a sort of system of behaviour evolution in-which while engaging enemies their behaviour can adapt at
+    runtime.
+    </span><br>
       ​
 </p>
 </body>
